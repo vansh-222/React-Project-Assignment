@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #2c2c2c;
+  color: white;
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.first-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.first-form input[type="text"] {
+  background: aqua;
+  border: 1px solid rgb(48, 48, 48);
+  border-radius: 0.25em;
+  color: black;
+  padding: 0.5em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.button {
+  background: hsla(0, 3%, 13%, 0.1);
+  border: 1px solid red;
+  color: red;
+  padding: 0.4em 0.8em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: hsla(0, 0%, 0%, 0.2);
+}
+
+.button-2 {
+  background: aqua;
+  border: 1px solid black;
+  color: black;
+}
+
+.button-2:hover{
+  background: rgba(0, 247, 255, 0.582);
+}
+
+.container {
+  background: #1e1e1e; 
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 4rem auto;  
+}
+
+.header {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-list li label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo-list li input[type="checkbox"] {
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #d9ff00;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.todo-list li input[type="checkbox"]:checked {
+  background: #d9ff00;
+  border-color: #e5ff00;
+}
+
+.todo-list li input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #202031;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.05rem;
+}
+
+.todo-list li label span {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.todo-list li input[type="checkbox"]:checked + label span {
+  color: #a0aec0;
+  text-decoration: line-through;
+}
+
+.empty {
+  text-align: center;
+  color: #b1b1b1;
+  margin-top: 2rem;
+}
+
+
