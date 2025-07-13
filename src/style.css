@@ -89,7 +89,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.2s, box-shadow 0.2s;
 } 
 
 
