@@ -10,7 +10,7 @@ export function TodoInput({ completed, id, heading, toggleTodo, deleteTodo }) {
         {heading}
       </label>
       <button className="button-2" onClick={() => deleteTodo(id)}>
-        Delete
+        Clear
       </button>
     </li>
   )
